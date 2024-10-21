@@ -1,12 +1,12 @@
 --- a/target/linux/rockchip/armv8/base-files/etc/board.d/01_leds
 +++ b/target/linux/rockchip/armv8/base-files/etc/board.d/01_leds
-@@ -14,6 +14,7 @@ friendlyarm,nanopi-r2s)
- 	ucidef_set_led_netdev "wan" "WAN" "$boardname:green:wan" "eth0"
- 	ucidef_set_led_netdev "lan" "LAN" "$boardname:green:lan" "eth1"
- 	;;
+@@ -11,6 +11,7 @@ board_config_update
+ case $board in
+ friendlyarm,nanopi-r2c|\
+ friendlyarm,nanopi-r2s|\
 +friendlyarm,nanopi-r3s|\
  friendlyarm,nanopi-r4s|\
- friendlyarm,nanopi-r4se|\
+ friendlyarm,nanopi-r6c|\
  sharevdi,guangmiao-g4c|\
 
 --- a/target/linux/rockchip/armv8/base-files/etc/board.d/02_network
