@@ -33,9 +33,9 @@ Signed-off-by: Robert Marko <robimarko@gmail.com>
 +			reg = <0x0 0x4a400000 0x0 0x00200000>;
 +		};
 +
- 		bootloader@4a600000 {
- 			reg = <0x0 0x4a600000 0x0 0x400000>;
- 			no-map;
+ 		smem@4ab00000 {
+ 			compatible = "qcom,smem";
+ 			reg = <0x0 0x4ab00000 0x0 0x00100000>;
 @@ -108,6 +118,21 @@
  			reg = <0x0 0x4ac00000 0x0 0x400000>;
  			no-map;
