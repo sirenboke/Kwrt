@@ -9,9 +9,9 @@ sed -i "s?targets/%S/packages?targets/%S/\$(LINUX_VERSION)?" include/feeds.mk
 
 sed -i '/	refresh_config();/d' scripts/feeds
 
-./scripts/feeds update -a
-./scripts/feeds install -a -p kiddin9 -f
-./scripts/feeds install -a
+#./scripts/feeds update -a
+#./scripts/feeds install -a -p kiddin9 -f
+#./scripts/feeds install -a
 
 rm -rf package/base-files package/network/utils/xdp-tools
 mv -f feeds/kiddin9/base-files package/
